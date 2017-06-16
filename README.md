@@ -14,7 +14,7 @@
 - [ ] Implement `examples/multi-page`
   - [ ] `login`
   - [ ] `registration`
-  - [ ] `customer-info`
+  - [x] `customer-info`
   - [ ] `cart`
   - [ ] `delivery`
   - [ ] `billing`
