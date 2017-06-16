@@ -13,7 +13,7 @@
 
 - [ ] Implement `examples/multi-page`
   - [x] `login`
-  - [ ] `registration`
+  - [x] `registration`
   - [x] `customer-info`
   - [ ] `cart`
   - [ ] `delivery`
