@@ -17,11 +17,6 @@ const Account = ({
 }) => (
     <div>
         {
-            !(user && user.id) ? (
-                <button onClick={onFetchUser}>Fetch user</button>
-            ) : undefined
-        }
-        {
             (user && !user.id)? (
                 <div>
                     <LoginForm onSubmit={onLogin}/>
