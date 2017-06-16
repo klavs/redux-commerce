@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Product A",
+      "quantity": 18,
+      "user": "john.doe@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Product B",
+      "quantity": 3,
+      "user": "john.doe+2@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Product C",
+      "quantity": 3,
+      "user": "john.doe@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Product D",
+      "quantity": 3,
+      "user": "anonymous"
+    }
+  ],
+  "users": [
+    {
+      "id": "john.doe@example.com",
+      "fullName": "John Doe",
+      "address": "House 11",
+      "postalCode": "1909",
+      "city": "Rīga",
+      "email": "john.doe@example.com",
+      "password": "parole"
+    },
+    {
+      "id": "john.doe+2@example.com",
+      "fullName": "John Doe",
+      "address": "House 11",
+      "postalCode": "1909",
+      "city": "Rīga",
+      "email": "john.doe+2@example.com",
+      "password": "parole"
+    }
+  ],
+  "active-user": {
+    "id": "john.doe@example.com",
+    "fullName": "John Doe",
+    "address": "House 11",
+    "postalCode": "1909",
+    "city": "Rīga",
+    "email": "john.doe@example.com"
+  }
+}
