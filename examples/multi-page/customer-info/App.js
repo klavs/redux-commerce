@@ -23,7 +23,9 @@ class CustomerInfoPage extends Component {
             onLogin,
             onRegister,
             onLogout,
-            onFetchUser
+            onFetchUser,
+
+            onGoToCart
         } = this.props
         const isLoggedIn = user !== null && user.id
         return (
@@ -56,6 +58,13 @@ class CustomerInfoPage extends Component {
                         <button onClick={onRegister}>Register</button>
                     )
                 }
+                {
+                    isLoggedIn ? (
+                        <button onClick={onGoToCart}>Go to cart</button>
+                    ) : (
+                        undefined
+                    )
+                }
             </div>
         )
     }
@@ -67,6 +76,6 @@ const CustomerInfoPageContainer = connect(
 )(CustomerInfoPage)
 
 
-export const createInstance = onInit => (
-    <CustomerInfoPageContainer onInit={onInit}/>
+export const createInstance = (onInit, onGoToCart) => (
+    <CustomerInfoPageContainer onInit={onInit} onGoToCart={onGoToCart}/>
 ) 

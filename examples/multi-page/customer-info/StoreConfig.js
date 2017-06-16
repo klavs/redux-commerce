@@ -1,7 +1,7 @@
 import * as account from "redux-commerce/lib/account"
 import fetch from "redux-commerce/lib/fetch"
 import {reducer as formReducer} from "redux-form"
-import getHref, {LOGIN_PAGE, REGISTRATION_PAGE} from "../pages"
+import getHref, {LOGIN_PAGE, REGISTRATION_PAGE, CART_PAGE} from "../pages"
 
 const redirectTo = page => window.location = getHref(page)
 
@@ -28,3 +28,5 @@ export const operationResolver = ({operation, params}) => {
 export const onInit = store => () => {
     store.dispatch(account.fetchUser())
 }
+
+export const goToCart = redirectTo.bind(this, CART_PAGE)
