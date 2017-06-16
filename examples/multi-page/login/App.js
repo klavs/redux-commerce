@@ -1,6 +1,7 @@
 import React, {Component} from "react"
-import Account from "../../common/containers/Account"
-import {fetchUser} from "redux-commerce/lib/account"
+import LoginForm from "../../common/forms/LoginForm"
+import {connect} from "react-redux"
+import * as account from "redux-commerce/lib/account"
 
 class LoginPage extends Component {
     componentDidMount(){
@@ -8,11 +9,18 @@ class LoginPage extends Component {
     }
     render(){
         return (
-            <Account/>
+            <LoginForm onSubmit={this.props.onLogin}/>
         )
     }
 }
 
+
+const LoginPageContainer = connect(
+    state => account.mapState(state.account),
+    account.mapDispatch
+)(LoginPage)
+
+
 export const createInstance = onInit => (
-    <LoginPage onInit={onInit}/>
+    <LoginPageContainer onInit={onInit}/>
 ) 

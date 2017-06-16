@@ -12,7 +12,7 @@
 ## Roadmap
 
 - [ ] Implement `examples/multi-page`
-  - [ ] `login`
+  - [x] `login`
   - [ ] `registration`
   - [x] `customer-info`
   - [ ] `cart`

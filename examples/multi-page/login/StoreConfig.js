@@ -15,7 +15,8 @@ export const operationResolver = ({operation, params}) => {
         case account.FETCH_USER:
             return fetch("/api/active-user")
                 .then(res => {
-                    if (!!res) redirectTo(CUSTOMER_INFO_PAGE)
+                    console.log(res)
+                    if (res.id) redirectTo(CUSTOMER_INFO_PAGE)
                 })
         case account.LOGIN:
             return fetch(`/api/users/${params.email}`)
