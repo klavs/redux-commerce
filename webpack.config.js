@@ -6,6 +6,7 @@ module.exports = {
     entry: {
         "all-in-one-page": "./examples/all-in-one-page",
         "multi-page/login": "./examples/multi-page/login",
+        "multi-page/registration": "./examples/multi-page/registration",
         "multi-page/customer-info": "./examples/multi-page/customer-info",
         "multi-page/cart": "./examples/multi-page/cart",
         "multi-page/delivery": "./examples/multi-page/delivery",
